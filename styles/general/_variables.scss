@@ -1,0 +1,77 @@
+// Primary Font Family
+@font-face {
+    font-family: CeraPro;
+    src: url('../../fonts/Cera Pro/Cera\ Pro\ Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: CeraPro;
+    src: url('../../fonts/Cera Pro/Cera\ Pro\ Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: CeraPro;
+    src: url('../../fonts/Cera Pro/Cera\ Pro\ Bold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: CeraPro;
+    src: url('../../fonts/Cera Pro/Cera\ Pro\ Black.otf') format('opentype');
+    font-weight: 800;
+}
+
+// Giveaway / Newsleter Font Family
+@font-face {
+    font-family: PFBBagueSlabPro;
+    src: url('../../fonts/PF Bague/PF Bague Slab Pro Bold.otf')
+        format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: PFBBagueSlabPro;
+    src: url('../../fonts/PF Bague/PF Bague Slab Pro Medium.otf')
+        format('opentype');
+    font-weight: 500;
+}
+
+// Colors
+$clr-white: #fff;
+$clr-light-card: #deefef;
+$clr-light: #9dceca;
+$clr-accent: #145b61;
+$clr-accent-hover: darken($clr-accent, 10%);
+$clr-dark: #0c383b;
+$clr-gray: #187076;
+$clr-black: #000;
+
+// Font Sizes
+$fs-100: 0.625rem;
+$fs-200: 0.75rem;
+$fs-300: 0.875rem;
+$fs-400: 1rem;
+$fs-500: 1.125rem;
+$fs-600: 1.25rem;
+$fs-700: 2rem;
+$fs-800: 2.5rem;
+$fs-900: 3.25rem;
+
+// Font Families
+$ff-primary: CeraPro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$ff-giveaway: PFBBagueSlabPro, $ff-primary;
+
+$border-radius: 4px;
+
+// Spacing
+$gap: 1rem;
+
+// Transition Duration
+$transition-duration: 0.25s;
+
+// Screen Sizes
+$desktop: 1200px;
+$tablet: 992px;
