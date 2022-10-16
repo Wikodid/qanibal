@@ -1,0 +1,27 @@
+@import '@/styles/general/variables';
+
+.location {
+    .details {
+        margin: 0 1em 1.25rem;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            svg {
+                margin-right: 0.5em;
+                fill: $clr-dark;
+            }
+        }
+
+        .features {
+            margin-top: 0.5rem;
+            margin-left: 2.5em;
+        }
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 2rem;
+    }
+}

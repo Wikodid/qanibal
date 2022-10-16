@@ -1,0 +1,46 @@
+@import '@/styles/general/variables';
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: $gap;
+}
+
+.sponsors {
+    position: relative;
+    margin-top: 2em;
+    padding-block: 4em;
+    background-color: #f5fafa;
+    box-shadow: 0 0 0 100vmax #f5fafa;
+    clip-path: inset(0 -100vmax);
+    overflow-x: hidden;
+
+    .container {
+        padding-inline: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leaves-top {
+        position: absolute;
+        top: 1em;
+        right: -17px;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .leaves-bottom {
+        position: absolute;
+        bottom: 1em;
+        left: -28px;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+@media screen and (min-width: calc(40em + 17px)) {
+    .sponsors {
+        overflow-x: visible;
+    }
+}

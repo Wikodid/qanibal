@@ -1,0 +1,10 @@
+@import '@/styles/general/variables';
+
+.container {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: $gap;
+}

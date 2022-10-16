@@ -1,0 +1,80 @@
+@import '@/styles/general/variables';
+
+.hero {
+    padding: 2.5em 1em;
+    height: min(600px, 80vh);
+    background-color: $clr-accent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > svg {
+        min-width: 2rem;
+        min-height: 2rem;
+    }
+
+    & > h1 {
+        margin-top: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+
+        span {
+            display: inline-block;
+            line-height: 1;
+        }
+
+        .place-athens {
+            font-weight: 500;
+        }
+
+        .place-2022 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+    }
+
+    .subtitles {
+        margin-top: 2rem;
+        letter-spacing: 0.5px;
+
+        h3 {
+            padding: 0.35rem 1.25rem;
+            background-color: #ce4a33;
+            display: flex;
+            justify-content: center;
+        }
+
+        .subtitle-0,
+        .subtitle-1 {
+            box-shadow: 1px 1px 5px -5px hsla(9, 61%, 20%, 0.5);
+        }
+
+        .subtitle-0 {
+            font-weight: 700;
+            rotate: -4deg;
+        }
+
+        .subtitle-1 {
+            rotate: 3.5deg;
+            font-weight: 500;
+        }
+    }
+
+    .about {
+        margin-top: auto;
+        text-align: center;
+
+        .location {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            svg {
+                margin-right: 4px;
+            }
+        }
+    }
+}

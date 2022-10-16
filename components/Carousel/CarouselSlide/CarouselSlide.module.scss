@@ -1,0 +1,74 @@
+@import '@/styles/general/variables';
+
+.slide {
+    position: relative;
+    padding-inline: 1em;
+
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 288px;
+    min-height: 100%;
+
+    .thumbnail {
+        width: 100%;
+        object-fit: cover;
+        max-height: 298px;
+    }
+
+    .details {
+        padding-top: 0.75rem;
+
+        h1 {
+            line-height: 1.35;
+        }
+
+        .sub {
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            margin-top: 0.5rem;
+        }
+
+        .duration {
+            margin-top: 0.75rem;
+            color: #115359;
+            font-weight: 800;
+        }
+    }
+
+    &:not(:last-of-type) {
+        border-right: 2px solid $clr-dark;
+    }
+
+    &.workshop {
+        width: 340px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.5rem;
+
+        .thumbnail {
+            width: 154px;
+        }
+    }
+
+    &.finished {
+        &::after {
+            content: attr(data-finished);
+            position: absolute;
+            top: 0.5rem;
+            right: calc(0.5rem + 1em);
+            padding: 0.25rem 0.5rem;
+            color: $clr-dark;
+            font-size: $fs-300;
+            font-weight: 700;
+            background-color: $clr-white;
+        }
+
+        * {
+            opacity: 0.85;
+            filter: grayscale(100%);
+            pointer-events: none;
+        }
+    }
+}
